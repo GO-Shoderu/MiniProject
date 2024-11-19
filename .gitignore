@@ -1,0 +1,83 @@
+# Ignore Magento generated and build files
+var/
+generated/
+vendor/
+pub/static/
+pub/media/
+
+# Retain essential .htaccess files in pub directories
+!pub/static/.htaccess
+!pub/media/.htaccess
+
+# Exclude sensitive or user-specific configuration files
+auth.json
+.env
+.env.*
+
+# Ignore Node.js and frontend-related files
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore IDE and editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHP CS Fixer cache
+.php-cs-fixer.cache
+
+# Ignore build and temporary files
+*.log
+*.cache
+*.tmp
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# Testing and coverage files
+phpunit.xml
+phpunit.xml.dist
+test-output/
+coverage/
+
+# Catch-all for backup and unnecessary files
+*.bak
+*.old
+
+# Exclude everything in vendor except explicitly tracked files
+/vendor/*
+!/vendor/magento
+
+# Exclude everything in pub/static except explicitly tracked files
+/pub/static/*
+!/pub/static/.htaccess
+
+# Exclude everything in pub/media except explicitly tracked files
+/pub/media/*
+!/pub/media/.htaccess
+
+# Retain essential configuration and template files
+!.editorconfig
+!.htaccess
+!.htaccess.sample
+!.php-cs-fixer.dist.php
+!.user.ini
+!CHANGELOG.md
+!composer.json
+!composer.lock
+!COPYING.txt
+!grunt-config.json.sample
+!Gruntfile.js.sample
+!LICENSE.txt
+!LICENSE_AFL.txt
+!nginx.conf.sample
+!package.json.sample
+!SECURITY.md
