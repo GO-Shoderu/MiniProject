@@ -22,7 +22,7 @@ class EnquiryModel extends AbstractModel implements EnquiryInterface
     protected function _construct()
     {
         $this->_init(EnquiryResourceModel::class);
-        
+
         $this->_eventPrefix = 'MiniProject_Enquiry';
         $this->_eventObject = 'Enquiry';
         $this->_idFieldName = 'enquiry_id';

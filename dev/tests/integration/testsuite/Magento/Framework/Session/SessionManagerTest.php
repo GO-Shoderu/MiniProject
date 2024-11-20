@@ -262,7 +262,7 @@ namespace Magento\Framework\Session {
             $appState = new \Magento\Framework\App\State($scope);
 
             /**
-             * Must be created by "new" in order to get a real Magento\Framework\App\State object that
+             * Must be created by "new" in order to get a real Magento\Framework\Api\State object that
              * is not overridden in the TestFramework
              *
              * @var \Magento\Framework\Session\SessionManager _model

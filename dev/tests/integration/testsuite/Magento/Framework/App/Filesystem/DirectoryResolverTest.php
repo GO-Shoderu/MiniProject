@@ -9,7 +9,7 @@ namespace Magento\Framework\App\Filesystem;
 use Magento\TestFramework\Helper\Bootstrap;
 
 /**
- * Test class for the \Magento\Framework\App\Filesystem\DirectoryResolver verification.
+ * Test class for the \Magento\Framework\Api\Filesystem\DirectoryResolver verification.
  */
 class DirectoryResolverTest extends \PHPUnit\Framework\TestCase
 {

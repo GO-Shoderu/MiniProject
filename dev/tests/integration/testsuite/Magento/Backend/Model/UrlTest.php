@@ -45,7 +45,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * App isolation is enabled to protect next tests from polluted registry by getUrl().
+     * Api isolation is enabled to protect next tests from polluted registry by getUrl().
      *
      * @param string $routePath
      * @param array $requestParams

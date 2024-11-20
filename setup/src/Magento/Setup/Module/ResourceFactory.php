@@ -12,7 +12,7 @@ use Magento\Framework\App\ResourceConnection;
 use Magento\Setup\Module\Setup\ResourceConfig;
 
 /**
- * Factory for Magento\Framework\App\ResourceConnection
+ * Factory for Magento\Framework\Api\ResourceConnection
  */
 class ResourceFactory
 {

@@ -14,7 +14,7 @@ use Magento\TestFramework\Response;
 use Laminas\Stdlib\Parameters;
 
 /**
- * Tests \Magento\Store\App\FrontController\Plugin\RequestPreprocessor.
+ * Tests \Magento\Store\Api\FrontController\Plugin\RequestPreprocessor.
  */
 class RequestPreprocessorTest extends \Magento\TestFramework\TestCase\AbstractController
 {

@@ -19,9 +19,9 @@ use Psr\Log\LoggerInterface;
 class AutoloaderTest extends TestCase
 {
     /**
-     * This method exists to fix the wrong return type hint on \Magento\Framework\App\ObjectManager::getInstance.
+     * This method exists to fix the wrong return type hint on \Magento\Framework\Api\ObjectManager::getInstance.
      * This way the IDE knows it's dealing with an instance of \Magento\TestFramework\ObjectManager and
-     * not \Magento\Framework\App\ObjectManager. The former has the method addSharedInstance, the latter does not.
+     * not \Magento\Framework\Api\ObjectManager. The former has the method addSharedInstance, the latter does not.
      *
      * @return ObjectManager|\Magento\Framework\App\ObjectManager
      * @SuppressWarnings(PHPMD.StaticAccess)

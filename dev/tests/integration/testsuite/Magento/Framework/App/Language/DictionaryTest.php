@@ -43,7 +43,7 @@ class DictionaryTest extends \PHPUnit\Framework\TestCase
      * @param string $languageCode
      * @param array $expectation
      * @dataProvider dictionaryDataProvider
-     * @magentoComponentsDir Magento/Framework/App/Language/_files
+     * @magentoComponentsDir Magento/Framework/Api/Language/_files
      */
     public function testDictionaryGetter($languageCode, $expectation)
     {

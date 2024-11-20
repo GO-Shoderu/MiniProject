@@ -152,7 +152,7 @@ class InitParamListenerTest extends TestCase
                 null, //argv
                 [] //expectedArray
             ],
-            'mage_mode App' => [
+            'mage_mode Api' => [
                 ['MAGE_MODE' => 'developer'],
                 [],
                 '', //test non array value
@@ -206,8 +206,8 @@ class InitParamListenerTest extends TestCase
                     'MAGE_MODE' => 'developer',
                 ],
             ],
-            'Env overwrites App' => [
-                ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/App']], 'MAGE_MODE' => 'developer'],
+            'Env overwrites Api' => [
+                ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/Api']], 'MAGE_MODE' => 'developer'],
                 ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/Env']], 'MAGE_MODE' => 'developer'],
                 ['bin/magento', 'setup:install'],
                 ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/Env']], 'MAGE_MODE' => 'developer'],
@@ -219,7 +219,7 @@ class InitParamListenerTest extends TestCase
                 ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/CLI']], 'MAGE_MODE' => 'developer'],
             ],
             'CLI overwrites All' => [
-                ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/App']], 'MAGE_MODE' => 'production'],
+                ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/Api']], 'MAGE_MODE' => 'production'],
                 ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/Env']]],
                 ['bin/magento', 'setup:install', '--magento-init-params=MAGE_DIRS[base][path]=/var/www/magento2/CLI'],
                 ['MAGE_DIRS' => ['base' => ['path' => '/var/www/magento2/CLI']], 'MAGE_MODE' => 'developer'],

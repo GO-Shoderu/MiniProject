@@ -5,7 +5,7 @@
  */
 
 /**
- * App State class for integration tests framework
+ * Api State class for integration tests framework
  */
 namespace Magento\TestFramework\App;
 

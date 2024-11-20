@@ -9,9 +9,9 @@
  */
 return [
     ['/app/code/core/Mage', '/app/code/Magento'],
-    ['/lib/Magento/App', '/lib/Magento/Framework/App'],
-    ['/dev/tests/integration/testsuite/Magento/App', '/dev/tests/integration/testsuite/Magento/Framework/App'],
-    ['/dev/tests/unit/testsuite/Magento/App', '/dev/tests/unit/testsuite/Magento/Framework/App'],
+    ['/lib/Magento/Api', '/lib/Magento/Framework/Api'],
+    ['/dev/tests/integration/testsuite/Magento/Api', '/dev/tests/integration/testsuite/Magento/Framework/Api'],
+    ['/dev/tests/unit/testsuite/Magento/Api', '/dev/tests/unit/testsuite/Magento/Framework/Api'],
     ['/lib/Magento/Data', '/lib/Magento/Framework/Data'],
     ['/dev/tests/integration/testsuite/Magento/Data', '/dev/tests/integration/testsuite/Magento/Framework/Data'],
     ['/dev/tests/unit/testsuite/Magento/Data', '/dev/tests/unit/testsuite/Magento/Framework/Data'],

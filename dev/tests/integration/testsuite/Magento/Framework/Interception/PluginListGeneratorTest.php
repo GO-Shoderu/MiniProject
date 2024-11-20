@@ -114,14 +114,14 @@ class PluginListGeneratorTest extends TestCase
         // Here in test is assumed that this class below has 3 plugins. But the amount of plugins and class itself
         // may vary. If it is changed, please update these assertions.
         $this->assertArrayHasKey(
-            'Magento\\Framework\\App\\Response\\Http_sendResponse___self',
+            'Magento\\Framework\\Api\\Response\\Http_sendResponse___self',
             $configDataFrontend[2],
             'Processed plugin does not exist in the processed plugins array.'
         );
 
         $this->assertSame(
             $expectedFrontend,
-            $configDataFrontend[2]['Magento\\Framework\\App\\Response\\Http_sendResponse___self'],
+            $configDataFrontend[2]['Magento\\Framework\\Api\\Response\\Http_sendResponse___self'],
             'Plugin configurations are not equal'
         );
 
@@ -131,7 +131,7 @@ class PluginListGeneratorTest extends TestCase
          */
         $this->assertNotContains(
             $frontendPlugin,
-            $configDataDummy[2]['Magento\\Framework\\App\\Response\\Http_sendResponse___self'][1],
+            $configDataDummy[2]['Magento\\Framework\\Api\\Response\\Http_sendResponse___self'][1],
             'Plugin configurations are not equal. "dummy" scope should not contain plugins from "frontend" scope'
         );
         /**
@@ -139,7 +139,7 @@ class PluginListGeneratorTest extends TestCase
          */
         $this->assertContains(
             $globalPlugin,
-            $configDataDummy[2]['Magento\\Framework\\App\\Response\\Http_sendResponse___self'][1],
+            $configDataDummy[2]['Magento\\Framework\\Api\\Response\\Http_sendResponse___self'][1],
             'Plugin configurations are not equal. "dummy" scope should contain plugins from "global" scope'
         );
     }

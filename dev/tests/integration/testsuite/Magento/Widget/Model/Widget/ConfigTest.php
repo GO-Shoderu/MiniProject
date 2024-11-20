@@ -23,7 +23,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * App isolation is enabled, because we change current area and design
+     * Api isolation is enabled, because we change current area and design
      *
      * @magentoAppIsolation enabled
      */

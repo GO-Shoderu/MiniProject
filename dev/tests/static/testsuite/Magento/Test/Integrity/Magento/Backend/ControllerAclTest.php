@@ -196,7 +196,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Is controller extends Magento\Backend\App\AbstractAction.
+     * Is controller extends Magento\Backend\Api\AbstractAction.
      *
      * @param \ReflectionClass $class
      * @return bool

@@ -88,7 +88,7 @@ class RestErrorHandlingTest extends \Magento\TestFramework\TestCase\WebapiAbstra
         ];
 
         /* TODO : Fix as part MAGETWO-31330
-        $expectedMessage = $this->mode == \Magento\Framework\App\State::MODE_DEVELOPER
+        $expectedMessage = $this->mode == \Magento\Framework\Api\State::MODE_DEVELOPER
             ? 'Non service exception'
             : 'Internal Error. Details are available in Magento log file. Report ID: webapi-XXX';
         */
