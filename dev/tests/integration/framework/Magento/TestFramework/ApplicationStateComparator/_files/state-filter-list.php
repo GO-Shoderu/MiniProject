@@ -101,7 +101,7 @@ return [
         Magento\Framework\Event\Invoker\InvokerDefault::class => ['_appState' => null], //                          .
         Magento\Developer\Model\Logger\Handler\Debug::class => ['state' => null], //                                .
         Magento\Framework\View\Design\FileResolution\Fallback\TemplateFile::class => //                             .
-            ['appState' => null], // ... using Magento\Framework\App\Http for the requests
+            ['appState' => null], // ... using Magento\Framework\Api\Http for the requests
         Magento\Store\App\Config\Source\RuntimeConfigSource::class =>  ['connection' => null],
         Magento\Framework\Mview\View\Changelog::class =>  ['connection' => null],
         Magento\Eav\Model\ResourceModel\Entity\Attribute\Collection::class =>  ['_conn' => null],

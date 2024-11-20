@@ -194,7 +194,7 @@ abstract class AbstractGraphqlCacheTest extends TestCase
         $request->setMethod('GET');
         $request->setParams($queryParams);
 
-        // required for \Magento\Framework\App\PageCache\Identifier to generate the correct cache key
+        // required for \Magento\Framework\Api\PageCache\Identifier to generate the correct cache key
         $request->setUri(implode('?', [$request->getPathInfo(), http_build_query($queryParams)]));
 
         return $this->objectManager->create(GraphQlController::class)->dispatch($request);

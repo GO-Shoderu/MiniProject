@@ -54,6 +54,6 @@ class AppActionListGenerator implements OperationInterface
      */
     public function getName()
     {
-        return 'App action list generation';
+        return 'Api action list generation';
     }
 }

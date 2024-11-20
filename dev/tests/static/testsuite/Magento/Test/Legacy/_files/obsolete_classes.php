@@ -3008,7 +3008,7 @@ return [
     ['Magento\Core\Model\Url\SecurityInfo', 'Magento\Framework\Url\SecurityInfo'],
     ['Magento\Core\App\Action\Plugin\Design', 'Magento\Framework\App\Action\Plugin\Design'],
     ['Magento\Core\App\Action\Plugin\LastUrl'],
-    ['Magento\Core\App\Router\NoRouteHandler', 'Magento/Framework/App/Router/NoRouteHandler'],
+    ['Magento\Core\App\Router\NoRouteHandler', 'Magento/Framework/Api/Router/NoRouteHandler'],
     ['Magento\Sales\Model\Quote\Address\Total\Nominal\Collector'],
     ['Magento\Sales\Model\Quote\Address\Total\Nominal\Shipping'],
     ['Magento\Sales\Model\Quote\Address\Total\Nominal\Subtotal'],

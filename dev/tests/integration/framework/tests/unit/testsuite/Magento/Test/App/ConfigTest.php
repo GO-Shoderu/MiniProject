@@ -5,7 +5,7 @@
  */
 
 /**
- * Test class for \Magento\TestFramework\App\Config.
+ * Test class for \Magento\TestFramework\Api\Config.
  */
 namespace Magento\Test\App;
 

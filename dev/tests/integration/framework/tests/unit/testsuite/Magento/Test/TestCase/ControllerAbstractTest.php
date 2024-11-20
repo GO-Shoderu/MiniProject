@@ -188,7 +188,7 @@ class ControllerAbstractTest extends AbstractController
     public function testAssertRedirect(): void
     {
         /*
-         * Prevent calling \Magento\Framework\App\Response\Http::setRedirect() because it dispatches event,
+         * Prevent calling \Magento\Framework\Api\Response\Http::setRedirect() because it dispatches event,
          * which requires fully initialized application environment intentionally not available
          * for unit tests
          */

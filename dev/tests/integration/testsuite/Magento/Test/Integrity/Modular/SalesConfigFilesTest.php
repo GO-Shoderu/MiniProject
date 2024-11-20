@@ -9,7 +9,7 @@ class SalesConfigFilesTest extends AbstractMergedConfigTest
 {
     /**
      * attributes represent merging rules
-     * copied from original namespace Magento\Framework\App\Route\Config;
+     * copied from original namespace Magento\Framework\Api\Route\Config;
      *
      * class Reader
      *

@@ -138,7 +138,7 @@ class FilesTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoComponentsDir Magento/Framework/App/Utility/_files/fixtures
+     * @magentoComponentsDir Magento/Framework/Api/Utility/_files/fixtures
      */
     public function testReadLists()
     {
@@ -162,7 +162,7 @@ class FilesTest extends \PHPUnit\Framework\TestCase
     /**
      * Tests if underscores are allowed in extended static files in theme.
      *
-     * @magentoComponentsDir Magento/Framework/App/Utility/_files/design
+     * @magentoComponentsDir Magento/Framework/Api/Utility/_files/design
      * @magentoAppIsolation enabled
      * @magentoDbIsolation enabled
      */

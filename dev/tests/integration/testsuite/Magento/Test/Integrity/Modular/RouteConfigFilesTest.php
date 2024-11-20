@@ -17,7 +17,7 @@ class RouteConfigFilesTest extends \PHPUnit\Framework\TestCase
 
     /**
      * attributes represent merging rules
-     * copied from original class \Magento\Framework\App\Route\Config\Reader
+     * copied from original class \Magento\Framework\Api\Route\Config\Reader
      * @var array
      */
     protected $_idAttributes = [
@@ -46,8 +46,8 @@ class RouteConfigFilesTest extends \PHPUnit\Framework\TestCase
         $this->validationStateMock->method('isValidationRequired')
             ->willReturn(true);
         $urnResolver = new \Magento\Framework\Config\Dom\UrnResolver();
-        $this->schemaFile = $urnResolver->getRealPath('urn:magento:framework:App/etc/routes.xsd');
-        $this->mergedSchemaFile = $urnResolver->getRealPath('urn:magento:framework:App/etc/routes_merged.xsd');
+        $this->schemaFile = $urnResolver->getRealPath('urn:magento:framework:Api/etc/routes.xsd');
+        $this->mergedSchemaFile = $urnResolver->getRealPath('urn:magento:framework:Api/etc/routes_merged.xsd');
     }
 
     public function testRouteConfigsValidation()

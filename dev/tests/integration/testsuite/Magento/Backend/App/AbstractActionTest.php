@@ -8,7 +8,7 @@ namespace Magento\Backend\App;
 use Magento\TestFramework\Bootstrap;
 
 /**
- * Test class for \Magento\Backend\App\AbstractAction.
+ * Test class for \Magento\Backend\Api\AbstractAction.
  * @magentoAppArea adminhtml
  */
 class AbstractActionTest extends \Magento\TestFramework\TestCase\AbstractBackendController

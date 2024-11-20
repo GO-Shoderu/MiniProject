@@ -334,7 +334,7 @@ class Installer
         $this->schemaPersistor = $this->objectManagerProvider->get()->get(SchemaPersistor::class);
         $this->triggerCleaner = $this->objectManagerProvider->get()->get(TriggerCleaner::class);
         /* Note: Because this class is dependency injected with Laminas ServiceManager, but our plugins, and some
-         * other classes also use the App\ObjectManager instead, we have to make sure that the DeploymentConfig object
+         * other classes also use the Api\ObjectManager instead, we have to make sure that the DeploymentConfig object
          * from that ObjectManager gets reset as different steps in the installer will write to the deployment config.
          */
         $this->firstDeploymentConfig = ObjectManager::getInstance()->get(DeploymentConfig::class);
