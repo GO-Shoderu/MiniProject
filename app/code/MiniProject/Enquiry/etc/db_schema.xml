@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="intern_enquiry" resource="default" engine="innodb" comment="Intern Enquiry Table">
+        <column xsi:type="smallint" name="enquiry_id" unsigned="true" nullable="false" identity="true" comment="Enquiry ID"/>
+        <column xsi:type="varchar" name="first_name" nullable="false" length="255" comment="First Name"/>
+        <column xsi:type="varchar" name="last_name" nullable="false" length="255" comment="Last Name"/>
+        <column xsi:type="varchar" name="phone_number" nullable="false" length="20" comment="Phone Number"/>
+        <column xsi:type="varchar" name="email" nullable="false" length="255" comment="Email Address"/>
+        <column xsi:type="varchar" name="intern_position" nullable="false" length="255" comment="Intern Position"/>
+        <column xsi:type="text" name="enquiry_details" nullable="false" comment="Enquiry Details"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Updated At"/>
+        <column xsi:type="varchar" name="enquiry_status" nullable="false" length="50" default="Pending" comment="Enquiry Status"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="enquiry_id"/>
+        </constraint>
+        <index referenceId="ENQUIRY_FORM_FIRST_NAME_LAST_NAME_EMAIL_INTERN_POSITION" indexType="fulltext">
+            <column name="first_name"/>
+            <column name="last_name"/>
+            <column name="email"/>
+            <column name="intern_position"/>
+        </index>
+    </table>
+</schema>
