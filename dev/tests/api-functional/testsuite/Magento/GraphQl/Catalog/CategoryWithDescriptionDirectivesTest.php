@@ -42,8 +42,8 @@ class CategoryWithDescriptionDirectivesTest extends GraphQlAbstract
         $storeManager = ObjectManager::getInstance()->get(StoreManagerInterface::class);
         $storeBaseUrl = $storeManager->getStore()->getBaseUrl();
 
-        /* Remove index.php from base URL */
-        $storeBaseUrlParts = explode('/index.php', $storeBaseUrl);
+        /* Remove Index.php from base URL */
+        $storeBaseUrlParts = explode('/Index.php', $storeBaseUrl);
         $storeBaseUrl = $storeBaseUrlParts[0];
 
         /** @var CategoryRepositoryInterface $categoryRepository */

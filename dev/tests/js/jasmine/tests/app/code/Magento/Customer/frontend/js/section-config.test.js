@@ -81,7 +81,7 @@ define(['squire'], function (Squire) {
                 expect(obj.getAffectedSections('https://localhost.com/path/subpath')).toEqual(['section']);
             });
 
-            it('Strips "index.php" suffix from provided URL.', function () {
+            it('Strips "Index.php" suffix from provided URL.', function () {
                 obj['Magento_Customer/js/section-config']({
                     sections: {
                         'path': [

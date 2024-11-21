@@ -37,7 +37,7 @@ return [
     'L_BUTTONVAR18' => 'address1=Green str, 67',
     'L_BUTTONVAR19' => 'address2=',
     'L_BUTTONVAR20' => 'paymentaction=authorization',
-    'L_BUTTONVAR21' => 'notify_url=http://localhost/index.php/paypal/ipn/',
+    'L_BUTTONVAR21' => 'notify_url=http://localhost/Index.php/paypal/ipn/',
     'L_BUTTONVAR22' => 'cancel_return=' . $cancelUrl,
     'L_BUTTONVAR23' => 'return=' . $returnUrl,
     'L_BUTTONVAR24' => 'lc=US',

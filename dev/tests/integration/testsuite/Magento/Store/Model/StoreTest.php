@@ -305,7 +305,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
 
         $this->model
             ->expects($this->any())->method('getUrl')
-            ->willReturn('http://localhost/index.php?' . SidResolverInterface::SESSION_ID_QUERY_PARAM . '=12345');
+            ->willReturn('http://localhost/Index.php?' . SidResolverInterface::SESSION_ID_QUERY_PARAM . '=12345');
         $this->request->setParams([SidResolverInterface::SESSION_ID_QUERY_PARAM, '12345']);
         $this->request->setQueryValue(SidResolverInterface::SESSION_ID_QUERY_PARAM, '12345');
         $this->assertStringContainsString(

@@ -60,7 +60,7 @@ class RequestPreprocessorTest extends \Magento\TestFramework\TestCase\AbstractCo
         $app = $this->_objectManager->create(\Magento\Framework\App\Http::class, ['_request' => $request]);
         $response = $app->launch();
         $redirectUrl = str_replace('http://', 'https://', $this->baseUrl) .
-            'index.php/customer/account/loginPost/';
+            'Index.php/customer/account/loginPost/';
         $this->assertResponseRedirect($response, $redirectUrl);
         $this->assertFalse($this->_objectManager->get(Session::class)->isLoggedIn());
         $this->setFrontendCompletelySecureRollback();
@@ -98,8 +98,8 @@ class RequestPreprocessorTest extends \Magento\TestFramework\TestCase\AbstractCo
         $request = [
             'REQUEST_SCHEME' => parse_url($requestUrl, PHP_URL_SCHEME),
             'SERVER_NAME' => parse_url($requestUrl, PHP_URL_HOST),
-            'SCRIPT_NAME' => '/index.php',
-            'SCRIPT_FILENAME' => 'index.php',
+            'SCRIPT_NAME' => '/Index.php',
+            'SCRIPT_FILENAME' => 'Index.php',
             'REQUEST_URI' => parse_url($requestUrl, PHP_URL_PATH),
         ];
         $this->setConfig($config);

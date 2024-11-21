@@ -21,7 +21,7 @@ class Environment
         // emulate HTTP request
         $serverVariables['HTTP_HOST'] = 'localhost';
         // emulate entry point to ensure that tests generate invariant URLs
-        $serverVariables['SCRIPT_FILENAME'] = 'index.php';
+        $serverVariables['SCRIPT_FILENAME'] = 'Index.php';
     }
 
     /**

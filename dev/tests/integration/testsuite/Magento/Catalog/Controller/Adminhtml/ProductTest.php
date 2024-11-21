@@ -125,7 +125,7 @@ class ProductTest extends AbstractBackendController
         $this->assertRedirect(
             $this->logicalNot(
                 $this->stringStartsWith(
-                    'http://localhost/index.php/backend/catalog/product/edit/id/' . $product->getEntityId() . '/'
+                    'http://localhost/Index.php/backend/catalog/product/edit/id/' . $product->getEntityId() . '/'
                 )
             )
         );
