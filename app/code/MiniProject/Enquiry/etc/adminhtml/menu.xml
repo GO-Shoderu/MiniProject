@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="MiniProject_Enquiry::enquiry"
+            title="Enquiries"
+            translate="title"
+            module="MiniProject_Enquiry"
+            sortOrder="0"
+            parent="Magento_Backend::content_elements"
+            action="enquiry"
+            resource="MiniProject_Enquiry::enquiry"
+        />
+    </menu>
+</config>
