@@ -110,7 +110,7 @@ class ViewTest extends AbstractController
         $this->dispatch('catalog/product/view/id/1/');
 
         $this->assertContains(
-            '<link  rel="canonical" href="http://localhost/index.php/catalog/product/view/_ignore_category/1/id/1/" />',
+            '<link  rel="canonical" href="http://localhost/Index.php/catalog/product/view/_ignore_category/1/id/1/" />',
             $this->getResponse()->getBody()
         );
     }

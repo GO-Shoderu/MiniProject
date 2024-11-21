@@ -40,7 +40,7 @@ class DeleteTest extends \PHPUnit\Framework\TestCase
         self::assertStringContainsString('title="Remove"', $buttonHtml);
         self::assertStringContainsString(
             'this.setAttribute(\'data-url\', '
-            . '\'http://localhost/index.php/backend/admin/integration/delete/id/'
+            . '\'http://localhost/Index.php/backend/admin/integration/delete/id/'
             . $integration->getId(),
             $buttonHtml
         );
@@ -59,7 +59,7 @@ class DeleteTest extends \PHPUnit\Framework\TestCase
         );
         self::assertStringContainsString(
             'this.setAttribute(\'data-url\', '
-            . '\'http://localhost/index.php/backend/admin/integration/delete/id/'
+            . '\'http://localhost/Index.php/backend/admin/integration/delete/id/'
             . $integration->getId(),
             $buttonHtml
         );

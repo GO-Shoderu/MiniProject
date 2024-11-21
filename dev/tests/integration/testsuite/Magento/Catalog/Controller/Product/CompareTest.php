@@ -92,7 +92,7 @@ class CompareTest extends AbstractController
             $this->equalTo(
                 [
                     'You added product Simple Product 1 Name to the ' .
-                    '<a href="http://localhost/index.php/catalog/product_compare/">comparison list</a>.'
+                    '<a href="http://localhost/Index.php/catalog/product_compare/">comparison list</a>.'
                 ]
             ),
             MessageInterface::TYPE_SUCCESS

@@ -120,7 +120,7 @@ class EditTest extends TestCase
             );
 
             $this->assertMatchesRegularExpression(
-                '/http:\/\/localhost\/index.php\/.*\/product/',
+                '/http:\/\/localhost\/Index.php\/.*\/product/',
                 $productLinkBlock->getItemUrl(),
                 'Child block with product link contains invalid URL'
             );
@@ -151,7 +151,7 @@ class EditTest extends TestCase
             );
 
             $this->assertMatchesRegularExpression(
-                '/http:\/\/localhost\/index.php\/.*\/category/',
+                '/http:\/\/localhost\/Index.php\/.*\/category/',
                 $categoryLinkBlock->getItemUrl(),
                 'Child block with category link contains invalid URL'
             );

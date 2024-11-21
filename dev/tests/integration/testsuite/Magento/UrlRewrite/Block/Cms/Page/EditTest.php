@@ -103,7 +103,7 @@ class EditTest extends TestCase
             );
 
             $this->assertMatchesRegularExpression(
-                '/http:\/\/localhost\/index.php\/.*\/cms_page/',
+                '/http:\/\/localhost\/Index.php\/.*\/cms_page/',
                 $cmsPageLinkBlock->getItemUrl(),
                 'Child block with CMS page contains invalid URL'
             );

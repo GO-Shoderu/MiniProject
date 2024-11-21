@@ -16,7 +16,7 @@ interface EnquiryInterface
      *
      * @param int $enquiryId
      */
-    public function setEnquiryId(int $enquiryId)
+    public function setEnquiryId(int $enquiryId);
 
     /**
      * Get First Name

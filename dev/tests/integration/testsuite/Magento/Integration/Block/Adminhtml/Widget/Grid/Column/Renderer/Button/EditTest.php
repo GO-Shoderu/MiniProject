@@ -40,7 +40,7 @@ class EditTest extends \PHPUnit\Framework\TestCase
         $this->assertStringContainsString('title="Edit"', $buttonHtml);
         $this->assertStringContainsString('class="' .$this->editButtonBlock->escapeHtmlAttr('action edit') .'"', $buttonHtml);
         $this->assertStringContainsString(
-            'window.location.href=\'http://localhost/index.php/backend/admin/integration/edit/id/'
+            'window.location.href=\'http://localhost/Index.php/backend/admin/integration/edit/id/'
             . $integration->getId(),
             $buttonHtml
         );
